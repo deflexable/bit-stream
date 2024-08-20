@@ -28,6 +28,14 @@ class ReadableBit extends Transform {
             callback(error || new Error(`${error}`));
         }
     }
+
+    // a work around for now
+    // _transform is not always called before the stream ends
+    _flush(callback) {
+        setTimeout(() => {
+            callback();
+        }, 0);
+    }
 }
 
 /**

@@ -59,7 +59,7 @@ createReadStream('./output.bin').pipe(reader);
 in order to stream the data back in the same order they were written, each written data are transformed into three boundaries which `metadata_size`, `metadata`, and `data`.
 
 - `metadata_size`: this consumes one byte and it contains the bytes size of the `metadata` as an unsigned big-endian number.
-- `metadata`: this dynamically consumes around 1 - 8 bytes that stores the bytes size of written data.
+- `metadata`: this dynamically consumes around 1 - 8 bytes that stores the bytes size of written data as an unsigned big-endian number.
 - `data`: the data that was written
 
 ## License

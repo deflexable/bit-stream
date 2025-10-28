@@ -1,6 +1,6 @@
 {
   "name": "@deflexable/bit-stream",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Write to and read from a stream bit-by-bit in a segmented, consistent, and ordered manner",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/deflexable/bit-stream/issues"
   },
-  "homepage": "https://github.com/deflexable/bit-stream#readme"
+  "homepage": "https://github.com/deflexable/bit-stream#readme",
+  "dependencies": {
+    "segment-binary": "^1.0.2"
+  }
 }
